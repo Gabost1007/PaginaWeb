@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Par-Impar</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="./css/estilo-parimpar.css">
+	<script>
+		function calcula(num){
+			if (num%2==0) {
+   				alert("El numero introducido es par");
+			}else {
+   				alert("El numero introducido es impar");
+			}
+		}
+	</script>
+	<div class="navegacion">
+		<h1>Par-Impar</h1>
+		<input type="button" class="botonnumero" value="Calcular" onclick="calcula(num.value)">
+		<h2>Calcular si el numero ingresado es par o impar</h2>
+	</div>
+</head>
+<body class="font-cover" id="inicio">
+	<div class="display">
+		<h2>Numero</h2>
+		<input type="text" id="num" class="numero" required><br>
+		<input type="button" class="botonnumero" value="Calcular" onclick="calcula(num.value)">
+	</div>
+	<div class="final">
+		<p>
+			Numero Par<br>
+			Es todo número entero que podemos escribir de la forma 2n, con n ϵ Z, o que podemos dividir exactamente entre 2. Por ejemplo, los números 10254,-6,0,10,-4 son todos pares.
+		</p>
+		<p>
+			Numero Impar<br>
+			Es todo número que no es par, es decir, es un entero que podemos escribir de la forma 2n+1, con n ϵ Z . Por ejemplo, los números 10253,-5,1,9,15 son todos impares.
+		</p>
+	</div>
+</body>
+</html>
